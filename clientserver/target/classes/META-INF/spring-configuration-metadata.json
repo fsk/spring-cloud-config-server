@@ -1,0 +1,17 @@
+{
+  "groups": [
+    {
+      "name": "config-server-client",
+      "type": "com.example.clientserver.Cfg",
+      "sourceType": "com.example.clientserver.Cfg"
+    }
+  ],
+  "properties": [
+    {
+      "name": "config-server-client.msg",
+      "type": "java.lang.String",
+      "sourceType": "com.example.clientserver.Cfg"
+    }
+  ],
+  "hints": []
+}

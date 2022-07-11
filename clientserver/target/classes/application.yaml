@@ -1,0 +1,34 @@
+
+
+#spring:
+#  application:
+#    name: config-server-client
+#  cloud:
+#    config:
+#      uri: "http://localhost:8888"
+#  config:
+#    import: "optional:configserver:http://localhost:8888"
+#  profiles:
+#    active: production
+
+
+#spring.application.name=config-server-client
+#spring.config.import=optional:configserver:
+##microservice-one.value=99
+#spring.cloud.config.uri=http://localhost:8888
+##spring.config.import=configserver:
+#spring.profiles.active=production
+#management.security.enabled=false
+##spring.config.import=configserver:http://localhost:8888
+
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+  application:
+    name: config-server-client
+  profiles:
+    active: development
+  #active: properties
+  config:
+    import: "optional:configserver:"
